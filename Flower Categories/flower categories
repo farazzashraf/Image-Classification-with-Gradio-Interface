@@ -1,0 +1,13 @@
+# Check if there are any subfolders (flower categories)
+flower_categories = list(loaded_data.glob('*'))
+if len(flower_categories) > 0:
+    for flower_category in flower_categories:
+        flower_images = list(flower_category.glob('*.jpg')) + list(flower_category.glob('*.png'))
+        if len(flower_images) > 0:
+            total_image_count += len(flower_images)
+    print(f"Total number of flower images found: {total_image_count}")
+else:
+    print("No flower categories (subfolders) found in the directory.")
+
+set_height, set_width = 180, 180
+batch_size = 32
