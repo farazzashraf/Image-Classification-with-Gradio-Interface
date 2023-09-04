@@ -1,0 +1,20 @@
+from google.colab import drive
+drive.mount('/content/drive')
+
+import numpy as np
+import os
+import matplotlib.pyplot as plt
+import tensorflow as tf
+import PIL
+import pathlib
+
+
+from PIL import Image
+from pathlib import Path
+from tensorflow.keras import layers,models
+
+# Update the path to the "flower_photos" folder in your Google Drive
+loaded_data = Path("/content/drive/My Drive/flower_photos")
+
+# Initialize a counter to keep track of the total number of images
+total_image_count = 0
