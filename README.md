@@ -2,7 +2,7 @@
 
 This repository contains a Python script for a flower classification task using a Convolutional Neural Network (CNN) implemented with TensorFlow and Keras. The code loads a flower dataset, preprocesses the data, trains the CNN model, and provides a web-based interface for making predictions with the trained model.
 
-## Dataset
+## Dataset 
 
 The dataset used in this project consists of images of various types of flowers, including daisies, dandelions, roses, sunflowers, and tulips. The dataset is organized into subfolders, each representing a different flower category. In this example, there are a total of 50 images, with 38 used for training and 12 for validation.
 
