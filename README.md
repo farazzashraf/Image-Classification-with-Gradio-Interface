@@ -14,9 +14,7 @@ The CNN model used for flower classification consists of several convolutional l
 
 After training the model, you can make predictions on new flower images using the Gradio interface. Upload an image, and the model will provide the top predicted flower classes.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 
