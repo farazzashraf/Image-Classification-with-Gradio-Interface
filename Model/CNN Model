@@ -1,0 +1,12 @@
+model.add(layers.Dense(128, activation='relu'))
+model.add(layers.Dense(dataset_classes,activation='softmax'))
+model.compile(optimizer='adam',
+              loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+              metrics=['accuracy'])
+epochs=10
+
+CNN_model = model.fit(
+  training_images,
+  validation_data=validation_images,
+  epochs=epochs
+)
